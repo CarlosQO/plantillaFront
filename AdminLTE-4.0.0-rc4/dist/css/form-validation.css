@@ -1,0 +1,131 @@
+/* ===== Enhanced Form Validation Styles ===== */
+
+/* Valid field styling */
+.was-validated .form-control:valid,
+.form-control.is-valid {
+    border-color: #28a745;
+    border-width: 2px;
+}
+
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Invalid field styling */
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: #dc3545;
+    border-width: 2px;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Valid feedback styling */
+.valid-feedback {
+    display: block;
+    color: #28a745;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.was-validated .form-control:valid~.valid-feedback {
+    display: block;
+}
+
+/* Invalid feedback styling */
+.invalid-feedback {
+    display: block;
+    color: #dc3545;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.was-validated .form-control:invalid~.invalid-feedback {
+    display: block;
+}
+
+/* Select elements */
+.was-validated .form-select:valid,
+.form-select.is-valid {
+    border-color: #28a745;
+    border-width: 2px;
+}
+
+.was-validated .form-select:invalid,
+.form-select.is-invalid {
+    border-color: #dc3545;
+    border-width: 2px;
+}
+
+/* Checkboxes and radios */
+.was-validated .form-check-input:valid,
+.form-check-input.is-valid {
+    border-color: #28a745;
+}
+
+.was-validated .form-check-input:invalid,
+.form-check-input.is-invalid {
+    border-color: #dc3545;
+}
+
+/* Form validation animation */
+.form-control,
+.form-select {
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Success message container */
+.validation-success {
+    display: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d4edda;
+    border-radius: 0.375rem;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.validation-success.show {
+    display: block;
+}
+
+.validation-success .alert-icon {
+    margin-right: 0.5rem;
+}
+
+/* Error message container */
+.validation-error {
+    display: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #f8d7da;
+    border-radius: 0.375rem;
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.validation-error.show {
+    display: block;
+}
+
+.validation-error .alert-icon {
+    margin-right: 0.5rem;
+}
+
+/* Form disabled state during submission */
+.form-submitting {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.form-submitting .btn {
+    opacity: 0.7;
+}
