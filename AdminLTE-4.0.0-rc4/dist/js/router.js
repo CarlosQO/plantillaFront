@@ -53,11 +53,11 @@ function initFormValidation() {
 
             if (!this.checkValidity()) {
                 this.classList.add('was-validated');
-                console.warn('❌ Formulario inválido - Completa los campos correctamente');
+                console.warn('Formulario inválido - Completa los campos correctamente');
             } else {
                 this.classList.add('was-validated');
-                console.log('✓ Formulario válido');
-                alert('✓ ¡Formulario enviado correctamente!');
+                console.log('Formulario válido');
+                alert('Formulario enviado correctamente');
             }
         });
     });
